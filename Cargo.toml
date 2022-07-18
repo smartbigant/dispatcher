@@ -3,6 +3,12 @@ name = "dispatcher"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+bastion = { version = "0.4.5", features = ["distributed"] }
+bastion-executor = { version = "0.4.2" }
+artillery-core = "0.1.2"
+lazy_static = "1.4.0"
+rand = "0.8.5"
+lightproc = "0.3.5"
+uuid = { version = "0.8.2", features = ["v5"] }
+futures-timer = "3.0.2"
